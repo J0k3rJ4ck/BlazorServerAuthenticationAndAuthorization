@@ -172,7 +172,7 @@ else
             await EventGuestService.DeleteEventGuestAsync(selectedEventId.Value, SelectedGuest.Id);
             eventGuests = await EventGuestService.GetAllEventGuestsAsync();
             guestsAttendingEvent = await GetGuestsAttendingEvent(selectedEventId.Value);
-            SelectedGuest = null; // deselect the guest
+            SelectedGuest = null;
         }
     }
 }
